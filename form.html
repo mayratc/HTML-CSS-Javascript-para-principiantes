@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Informacion basica</legend>
+            <label for="campo-nombre">Nombre:</label><br>
+            <input type="text" name="campo-nombre" placeholder="indica tu nombre aqui" size="30" maxlength="30"><br>
+            <label for="campo-apellido">Apellidos:</label><br>
+            <input type="text" name="campo-apellido" placeholder="indica tu apellido aqui" size="40" maxlength="40"><br>
+            <label for="f-nacimiento">Fecha de nacimiento:</label><br>
+            <input type="date" name="f-nacimiento"><br>
+            <label>Cual es tu edad:</label><br>
+            <input type="radio" name="radio" value="1">0 a 20 años <br>
+            <input type="radio" name="radio" value="2" checked>20 a 30 años <br>
+            <input type="radio" name="radio" value="3">30 a 50 años <br>
+            <input type="radio" name="radio" value="1">+ 50 años <br>
+            <label>Genero:</label><br>
+            <input type="radio">Mujer
+            <input type="radio">Hombre <br>
+            <label for="campo-foto">Carga tu fotografia:</label><br>
+            <input type="file" name="campo-foto" accept="image/*"><br><br>
+            <input type="reset">
+        </fieldset>
+        <fieldset>
+            <legend>¿Quq deporte practicas?</legend>
+            <input type="checkbox" name="baloncesto" value="deporte1" checked>Baloncesto <br>
+            <input type="checkbox" name="futbol" value="deporte2">Futbol<br>
+            <input type="checkbox" name="tenis" value="deporte3">Tenis<br>
+        </fieldset>
+        <fieldset>
+            <legend>Validar correo:</legend>
+            <label for="campo-correo">Email:</label><br>
+            <input type="email" name="direc-email" size="30" required placeholder="aqui su correo">
+            <input type="submit" value="enviar">
+        </fieldset>
+        <fieldset>
+            <legend>¿Que color es su vehiculo?</legend>
+            <label>Seleccione el color:</label><br>
+            <input type="color" name="codigo-color"><br><br>
+            <input type="submit">
+        </fieldset>
+        <fieldset>
+            <legend>Url de una web:</legend>
+            <label>indique url:</label>
+            <input type="url" name="url">
+            <input type="submit">
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre*:</label><br>
+            <input type="text" name="nombre" placeholder="ingrese nombre(s)" size="30" style="background-color:yellow"><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" name="apellidos" placeholder="ingrese apellido(s)" size="30" style="background-color:yellow"><br>
+            <label for="direccion">Direcion:</label><br>
+            <input type="text" name="direccion" placeholder="ingrese direccion" size="50" style="background-color:yellow"><br>
+            <label for="celular">Celular:</label><br>
+            <input type="number" name="celular" placeholder="ingrese numero de celular" size="8" style="background-color:yellow"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" placeholder="Direccion de correo" size="50" style="background-color:yellow"><br>
+            <label>¿Tienes una pagina web?</label>
+            <input type="radio">si
+            <input type="radio">no <br>
+            <input type="url" placeholder="Coloque su url aqui" size="50" style="background-color:yellow">
+        </fieldset>
+        <fieldset>
+            <legend>Datos Adicionales</legend>
+            
+                <div>
+                    <label>Cual es tu edad:</label><br>
+                    <input type="radio" value="1">0 a 20 años<br>
+                    <input type="radio" value="1" checked>20 a 30 años<br>
+                    <input type="radio" value="1">30 a 50 años<br>
+                    <input type="radio" value="1">+ 50<br><br><br>
+                    <label>Fecha de nacimientos:</label><br>
+                    <input type="date" name="f_nacimiento" style="background-color:yellow">
+                </div>
+                <div>
+                    <label>Foto de perfil</label>
+                    <div><img src="img/foto-jorge.jpg"></div><br>
+                    <input type="file" accept="image/*"><br><br>
+                    <label>Genero</label><br>
+                    <input type="radio">Hombre <br>
+                    <input type="radio">Mujer <br>
+
+                </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Validar/Enviar Formulario</legend>
+            <input type="button" name="validar" value="validar datos" style="background-color:yellow">
+            <input type="submit" name="enviar" value="enviar datos">
+            <input type="reset" value="Limpiar Campo">
+
+        </fieldset>
+        <fieldset>
+            <legend>Informacion en el formulario</legend>
+        </fieldset>
+    </form>
+</body>
+
+</html>
